@@ -27,7 +27,7 @@ namespace gezzyn.Application.Behaviors
             sw.Stop();
 
             if (sw.ElapsedMilliseconds > 500)
-                _logger.LogWarning("⚠ {Name} yavaş çalıştı: {Ms}ms", name, sw.ElapsedMilliseconds);
+                _logger.LogWarning("{Name} yavaş çalıştı: {Ms}ms", name, sw.ElapsedMilliseconds);
             else
                 _logger.LogInformation("← {Name} tamamlandı: {Ms}ms", name, sw.ElapsedMilliseconds);
 
