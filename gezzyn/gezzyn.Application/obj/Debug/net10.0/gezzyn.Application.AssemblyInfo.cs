@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("gezzyn.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8af3b5e600323ae4a3667c1189a79ed52ef984e2")]
 [assembly: System.Reflection.AssemblyProductAttribute("gezzyn.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("gezzyn.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

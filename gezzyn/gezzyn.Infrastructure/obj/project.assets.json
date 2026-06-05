@@ -3158,11 +3158,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\gezzyn\\gezzyn\\gezzyn.Infrastructure\\gezzyn.Infrastructure.csproj",
+      "projectUniqueName": "D:\\Gezzyn\\gezzyn\\gezzyn.Infrastructure\\gezzyn.Infrastructure.csproj",
       "projectName": "gezzyn.Infrastructure",
-      "projectPath": "D:\\gezzyn\\gezzyn\\gezzyn.Infrastructure\\gezzyn.Infrastructure.csproj",
+      "projectPath": "D:\\Gezzyn\\gezzyn\\gezzyn.Infrastructure\\gezzyn.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\software-4\\.nuget\\packages\\",
-      "outputPath": "D:\\gezzyn\\gezzyn\\gezzyn.Infrastructure\\obj\\",
+      "outputPath": "D:\\Gezzyn\\gezzyn\\gezzyn.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3184,11 +3184,11 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\gezzyn\\gezzyn\\gezzyn.Application\\gezzyn.Application.csproj": {
-              "projectPath": "D:\\gezzyn\\gezzyn\\gezzyn.Application\\gezzyn.Application.csproj"
+            "D:\\Gezzyn\\gezzyn\\gezzyn.Application\\gezzyn.Application.csproj": {
+              "projectPath": "D:\\Gezzyn\\gezzyn\\gezzyn.Application\\gezzyn.Application.csproj"
             },
-            "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj": {
-              "projectPath": "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj"
+            "D:\\Gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj": {
+              "projectPath": "D:\\Gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj"
             }
           }
         }

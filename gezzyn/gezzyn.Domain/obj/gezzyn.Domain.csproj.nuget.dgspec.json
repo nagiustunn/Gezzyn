@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj": {}
+    "D:\\Gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj": {}
   },
   "projects": {
-    "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj": {
+    "D:\\Gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj",
+        "projectUniqueName": "D:\\Gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj",
         "projectName": "gezzyn.Domain",
-        "projectPath": "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj",
+        "projectPath": "D:\\Gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj",
         "packagesPath": "C:\\Users\\software-4\\.nuget\\packages\\",
-        "outputPath": "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\obj\\",
+        "outputPath": "D:\\Gezzyn\\gezzyn\\gezzyn.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
