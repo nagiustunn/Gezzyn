@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\gezzyn\\gezzyn\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F6AF6C45-E039-C74C-E79B-9BC07568A3A0}|gezzyn.Domain\\gezzyn.Domain.csproj|d:\\gezzyn\\gezzyn\\gezzyn.domain\\enums\\visitstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6AF6C45-E039-C74C-E79B-9BC07568A3A0}|gezzyn.Domain\\gezzyn.Domain.csproj|solutionrelative:gezzyn.domain\\enums\\visitstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6AF6C45-E039-C74C-E79B-9BC07568A3A0}|gezzyn.Domain\\gezzyn.Domain.csproj|d:\\gezzyn\\gezzyn\\gezzyn.domain\\enums\\tripstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6AF6C45-E039-C74C-E79B-9BC07568A3A0}|gezzyn.Domain\\gezzyn.Domain.csproj|solutionrelative:gezzyn.domain\\enums\\tripstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6AF6C45-E039-C74C-E79B-9BC07568A3A0}|gezzyn.Domain\\gezzyn.Domain.csproj|d:\\gezzyn\\gezzyn\\gezzyn.domain\\enums\\tripmemberrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6AF6C45-E039-C74C-E79B-9BC07568A3A0}|gezzyn.Domain\\gezzyn.Domain.csproj|solutionrelative:gezzyn.domain\\enums\\tripmemberrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6AF6C45-E039-C74C-E79B-9BC07568A3A0}|gezzyn.Domain\\gezzyn.Domain.csproj|d:\\gezzyn\\gezzyn\\gezzyn.domain\\enums\\placesource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6AF6C45-E039-C74C-E79B-9BC07568A3A0}|gezzyn.Domain\\gezzyn.Domain.csproj|solutionrelative:gezzyn.domain\\enums\\placesource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6AF6C45-E039-C74C-E79B-9BC07568A3A0}|gezzyn.Domain\\gezzyn.Domain.csproj|d:\\gezzyn\\gezzyn\\gezzyn.domain\\enums\\placecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6AF6C45-E039-C74C-E79B-9BC07568A3A0}|gezzyn.Domain\\gezzyn.Domain.csproj|solutionrelative:gezzyn.domain\\enums\\placecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:147:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VisitStatus.cs",
+              "DocumentMoniker": "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\Enums\\VisitStatus.cs",
+              "RelativeDocumentMoniker": "gezzyn.Domain\\Enums\\VisitStatus.cs",
+              "ToolTip": "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\Enums\\VisitStatus.cs",
+              "RelativeToolTip": "gezzyn.Domain\\Enums\\VisitStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T11:16:47.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TripStatus.cs",
+              "DocumentMoniker": "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\Enums\\TripStatus.cs",
+              "RelativeDocumentMoniker": "gezzyn.Domain\\Enums\\TripStatus.cs",
+              "ToolTip": "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\Enums\\TripStatus.cs",
+              "RelativeToolTip": "gezzyn.Domain\\Enums\\TripStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T11:16:45.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TripMemberRole.cs",
+              "DocumentMoniker": "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\Enums\\TripMemberRole.cs",
+              "RelativeDocumentMoniker": "gezzyn.Domain\\Enums\\TripMemberRole.cs",
+              "ToolTip": "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\Enums\\TripMemberRole.cs",
+              "RelativeToolTip": "gezzyn.Domain\\Enums\\TripMemberRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T11:16:41.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlaceSource.cs",
+              "DocumentMoniker": "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\Enums\\PlaceSource.cs",
+              "RelativeDocumentMoniker": "gezzyn.Domain\\Enums\\PlaceSource.cs",
+              "ToolTip": "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\Enums\\PlaceSource.cs",
+              "RelativeToolTip": "gezzyn.Domain\\Enums\\PlaceSource.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T11:16:31.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlaceCategory.cs",
+              "DocumentMoniker": "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\Enums\\PlaceCategory.cs",
+              "RelativeDocumentMoniker": "gezzyn.Domain\\Enums\\PlaceCategory.cs",
+              "ToolTip": "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\Enums\\PlaceCategory.cs",
+              "RelativeToolTip": "gezzyn.Domain\\Enums\\PlaceCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T11:16:30.315Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

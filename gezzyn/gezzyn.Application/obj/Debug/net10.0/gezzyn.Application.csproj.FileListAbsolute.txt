@@ -1,0 +1,11 @@
+D:\gezzyn\gezzyn\gezzyn.Application\bin\Debug\net10.0\gezzyn.Application.deps.json
+D:\gezzyn\gezzyn\gezzyn.Application\bin\Debug\net10.0\gezzyn.Application.dll
+D:\gezzyn\gezzyn\gezzyn.Application\bin\Debug\net10.0\gezzyn.Application.pdb
+D:\gezzyn\gezzyn\gezzyn.Application\obj\Debug\net10.0\gezzyn.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\gezzyn\gezzyn\gezzyn.Application\obj\Debug\net10.0\gezzyn.Application.AssemblyInfoInputs.cache
+D:\gezzyn\gezzyn\gezzyn.Application\obj\Debug\net10.0\gezzyn.Application.AssemblyInfo.cs
+D:\gezzyn\gezzyn\gezzyn.Application\obj\Debug\net10.0\gezzyn.Application.csproj.CoreCompileInputs.cache
+D:\gezzyn\gezzyn\gezzyn.Application\obj\Debug\net10.0\gezzyn.Application.dll
+D:\gezzyn\gezzyn\gezzyn.Application\obj\Debug\net10.0\refint\gezzyn.Application.dll
+D:\gezzyn\gezzyn\gezzyn.Application\obj\Debug\net10.0\gezzyn.Application.pdb
+D:\gezzyn\gezzyn\gezzyn.Application\obj\Debug\net10.0\ref\gezzyn.Application.dll
