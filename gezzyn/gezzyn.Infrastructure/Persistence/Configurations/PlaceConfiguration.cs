@@ -29,7 +29,7 @@ namespace gezzyn.Infrastructure.Persistence.Configurations
 
             builder.HasIndex(p => p.GooglePlaceId)
                 .IsUnique()
-                .HasFilter("google_place_id IS NOT NULL");
+                .HasFilter("\"GooglePlaceId\" IS NOT NULL");
         }
     }
 }

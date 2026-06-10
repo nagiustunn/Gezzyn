@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MePFaFb8Kzw=",
+  "dgSpecHash": "08mW4MJFgUc=",
   "success": true,
   "projectFilePath": "D:\\gezzyn\\gezzyn\\gezzyn\\gezzyn.API.csproj",
   "expectedPackageFiles": [
@@ -63,11 +63,11 @@
     {
       "code": "NU1510",
       "level": "Warning",
-      "message": "PackageReference Microsoft.Extensions.Configuration.Json will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
+      "message": "PackageReference Microsoft.AspNetCore.Cors will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
       "projectPath": "D:\\gezzyn\\gezzyn\\gezzyn\\gezzyn.API.csproj",
       "warningLevel": 1,
       "filePath": "D:\\gezzyn\\gezzyn\\gezzyn\\gezzyn.API.csproj",
-      "libraryId": "Microsoft.Extensions.Configuration.Json",
+      "libraryId": "Microsoft.AspNetCore.Cors",
       "targetGraphs": [
         "net10.0"
       ]
@@ -87,11 +87,11 @@
     {
       "code": "NU1510",
       "level": "Warning",
-      "message": "PackageReference Microsoft.AspNetCore.Cors will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
+      "message": "PackageReference Microsoft.Extensions.Configuration.Json will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
       "projectPath": "D:\\gezzyn\\gezzyn\\gezzyn\\gezzyn.API.csproj",
       "warningLevel": 1,
       "filePath": "D:\\gezzyn\\gezzyn\\gezzyn\\gezzyn.API.csproj",
-      "libraryId": "Microsoft.AspNetCore.Cors",
+      "libraryId": "Microsoft.Extensions.Configuration.Json",
       "targetGraphs": [
         "net10.0"
       ]

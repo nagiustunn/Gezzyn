@@ -13,6 +13,7 @@ namespace gezzyn.Infrastructure
             services.AddScoped<IPasswordService, PasswordService>();
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<ICurrentUserService, CurrentUserService>();
 
             return services;
         }

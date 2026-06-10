@@ -25,7 +25,6 @@ D:\gezzyn\gezzyn\gezzyn\obj\Debug\net10.0\staticwebassets.build.json.cache
 D:\gezzyn\gezzyn\gezzyn\obj\Debug\net10.0\staticwebassets.development.json
 D:\gezzyn\gezzyn\gezzyn\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 D:\gezzyn\gezzyn\gezzyn\obj\Debug\net10.0\swae.build.ex.cache
-D:\gezzyn\gezzyn\gezzyn\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 D:\gezzyn\gezzyn\gezzyn\obj\Debug\net10.0\gezzyn.API.csproj.Up2Date
 D:\gezzyn\gezzyn\gezzyn\obj\Debug\net10.0\gezzyn.API.dll
 D:\gezzyn\gezzyn\gezzyn\obj\Debug\net10.0\refint\gezzyn.API.dll

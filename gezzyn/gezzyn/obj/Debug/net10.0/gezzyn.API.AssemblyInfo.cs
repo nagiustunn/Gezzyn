@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("gezzyn.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f720143ada36efce38785d9f6f92ae549deb047")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21caa262e5cb802227f4c9cd23dcd2bd83eccc2d")]
 [assembly: System.Reflection.AssemblyProductAttribute("gezzyn.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("gezzyn.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
