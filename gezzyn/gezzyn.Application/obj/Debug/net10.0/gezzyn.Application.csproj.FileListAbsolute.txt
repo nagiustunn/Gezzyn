@@ -9,3 +9,8 @@ D:\gezzyn\gezzyn\gezzyn.Application\obj\Debug\net10.0\gezzyn.Application.dll
 D:\gezzyn\gezzyn\gezzyn.Application\obj\Debug\net10.0\refint\gezzyn.Application.dll
 D:\gezzyn\gezzyn\gezzyn.Application\obj\Debug\net10.0\gezzyn.Application.pdb
 D:\gezzyn\gezzyn\gezzyn.Application\obj\Debug\net10.0\ref\gezzyn.Application.dll
+D:\gezzyn\gezzyn\gezzyn.Application\bin\Debug\net10.0\gezzyn.Domain.dll
+D:\gezzyn\gezzyn\gezzyn.Application\bin\Debug\net10.0\gezzyn.Domain.pdb
+D:\gezzyn\gezzyn\gezzyn.Application\obj\Debug\net10.0\gezzyn.Application.csproj.AssemblyReference.cache
+D:\gezzyn\gezzyn\gezzyn.Application\obj\Debug\net10.0\gezzyn.Application.sourcelink.json
+D:\gezzyn\gezzyn\gezzyn.Application\obj\Debug\net10.0\gezzyn.A.C54A670D.Up2Date

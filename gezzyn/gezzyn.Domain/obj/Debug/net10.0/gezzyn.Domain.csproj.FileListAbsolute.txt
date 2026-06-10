@@ -9,3 +9,4 @@ D:\gezzyn\gezzyn\gezzyn.Domain\obj\Debug\net10.0\gezzyn.Domain.dll
 D:\gezzyn\gezzyn\gezzyn.Domain\obj\Debug\net10.0\refint\gezzyn.Domain.dll
 D:\gezzyn\gezzyn\gezzyn.Domain\obj\Debug\net10.0\gezzyn.Domain.pdb
 D:\gezzyn\gezzyn\gezzyn.Domain\obj\Debug\net10.0\ref\gezzyn.Domain.dll
+D:\gezzyn\gezzyn\gezzyn.Domain\obj\Debug\net10.0\gezzyn.Domain.sourcelink.json

@@ -45,6 +45,52 @@
           }
         }
       },
+      "Isopoh.Cryptography.Argon2/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Isopoh.Cryptography.Blake2b": "2.0.0",
+          "Isopoh.Cryptography.SecureArray": "2.0.0"
+        },
+        "compile": {
+          "lib/net7.0/Isopoh.Cryptography.Argon2.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Isopoh.Cryptography.Argon2.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Isopoh.Cryptography.Blake2b/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Isopoh.Cryptography.SecureArray": "2.0.0"
+        },
+        "compile": {
+          "lib/net7.0/Isopoh.Cryptography.Blake2b.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Isopoh.Cryptography.Blake2b.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Isopoh.Cryptography.SecureArray/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Isopoh.Cryptography.SecureArray.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Isopoh.Cryptography.SecureArray.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "MediatR/14.1.0": {
         "type": "package",
         "dependencies": {
@@ -89,6 +135,38 @@
         },
         "runtime": {
           "lib/netstandard2.0/Meilisearch.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Http.Abstractions/2.3.11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.3.10"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Http.Features/5.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "5.0.1"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll": {
             "related": ".xml"
           }
         }
@@ -565,11 +643,11 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Configuration/10.0.7": {
+      "Microsoft.Extensions.Configuration/10.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "10.0.7",
-          "Microsoft.Extensions.Primitives": "10.0.7"
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.9",
+          "Microsoft.Extensions.Primitives": "10.0.9"
         },
         "compile": {
           "lib/net10.0/Microsoft.Extensions.Configuration.dll": {
@@ -585,10 +663,10 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Configuration.Abstractions/10.0.7": {
+      "Microsoft.Extensions.Configuration.Abstractions/10.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "10.0.7"
+          "Microsoft.Extensions.Primitives": "10.0.9"
         },
         "compile": {
           "lib/net10.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
@@ -715,7 +793,7 @@
           "buildTransitive/net8.0/Microsoft.Extensions.Options.targets": {}
         }
       },
-      "Microsoft.Extensions.Primitives/10.0.8": {
+      "Microsoft.Extensions.Primitives/10.0.9": {
         "type": "package",
         "compile": {
           "lib/net10.0/Microsoft.Extensions.Primitives.dll": {
@@ -1018,6 +1096,7 @@
           "FluentValidation": "12.1.1",
           "FluentValidation.DependencyInjectionExtensions": "12.1.1",
           "MediatR": "14.1.0",
+          "Microsoft.Extensions.Configuration": "10.0.8",
           "gezzyn.Domain": "1.0.0"
         },
         "compile": {
@@ -1088,6 +1167,72 @@
         "logo.png"
       ]
     },
+    "Isopoh.Cryptography.Argon2/2.0.0": {
+      "sha512": "8ytWN19j+qARb/XYi7KkNMm4Z8zS6tfGgnsZ1N5ihbQ5LXfyL+uYowfJxtGW9TO0S8NM2q0BaTKGOtOlsrhclQ==",
+      "type": "package",
+      "path": "isopoh.cryptography.argon2/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "isopoh.cryptography.argon2.2.0.0.nupkg.sha512",
+        "isopoh.cryptography.argon2.nuspec",
+        "isopoh.png",
+        "lib/net6.0/Isopoh.Cryptography.Argon2.dll",
+        "lib/net6.0/Isopoh.Cryptography.Argon2.xml",
+        "lib/net7.0/Isopoh.Cryptography.Argon2.dll",
+        "lib/net7.0/Isopoh.Cryptography.Argon2.xml",
+        "lib/netcoreapp3.1/Isopoh.Cryptography.Argon2.dll",
+        "lib/netcoreapp3.1/Isopoh.Cryptography.Argon2.xml",
+        "lib/netstandard2.0/Isopoh.Cryptography.Argon2.dll",
+        "lib/netstandard2.0/Isopoh.Cryptography.Argon2.xml"
+      ]
+    },
+    "Isopoh.Cryptography.Blake2b/2.0.0": {
+      "sha512": "Co56bjSZV13fpvYHEN04qG8hqc0rKRm4os8iEgpJ/kujvt0pYtOVhj5J0Q7HBPbHwpcChRh2CjYVCGm4nw85VQ==",
+      "type": "package",
+      "path": "isopoh.cryptography.blake2b/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "isopoh.cryptography.blake2b.2.0.0.nupkg.sha512",
+        "isopoh.cryptography.blake2b.nuspec",
+        "isopoh.png",
+        "lib/net6.0/Isopoh.Cryptography.Blake2b.dll",
+        "lib/net6.0/Isopoh.Cryptography.Blake2b.xml",
+        "lib/net7.0/Isopoh.Cryptography.Blake2b.dll",
+        "lib/net7.0/Isopoh.Cryptography.Blake2b.xml",
+        "lib/netcoreapp3.1/Isopoh.Cryptography.Blake2b.dll",
+        "lib/netcoreapp3.1/Isopoh.Cryptography.Blake2b.xml",
+        "lib/netstandard2.0/Isopoh.Cryptography.Blake2b.dll",
+        "lib/netstandard2.0/Isopoh.Cryptography.Blake2b.xml"
+      ]
+    },
+    "Isopoh.Cryptography.SecureArray/2.0.0": {
+      "sha512": "oWbRv/BTztKJxKFr3FBurWBBCgE1+nUTm3pwtA3Yg7Xeo4wDpaLstAwqx8HeQG3/b9yOs2qykpqfbNPJ40McIw==",
+      "type": "package",
+      "path": "isopoh.cryptography.securearray/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "isopoh.cryptography.securearray.2.0.0.nupkg.sha512",
+        "isopoh.cryptography.securearray.nuspec",
+        "isopoh.png",
+        "lib/net6.0/Isopoh.Cryptography.SecureArray.dll",
+        "lib/net6.0/Isopoh.Cryptography.SecureArray.xml",
+        "lib/net7.0/Isopoh.Cryptography.SecureArray.dll",
+        "lib/net7.0/Isopoh.Cryptography.SecureArray.xml",
+        "lib/netcoreapp3.1/Isopoh.Cryptography.SecureArray.dll",
+        "lib/netcoreapp3.1/Isopoh.Cryptography.SecureArray.xml",
+        "lib/netstandard2.0/Isopoh.Cryptography.SecureArray.dll",
+        "lib/netstandard2.0/Isopoh.Cryptography.SecureArray.xml"
+      ]
+    },
     "MediatR/14.1.0": {
       "sha512": "pdxza1pLqAk+06LV3THzNJrw5K5Ah6EC17TEkoC90gsAxwtXDJAQrGuDSDinHGgxWKWEn5ebqTNN3k1bLJOb0g==",
       "type": "package",
@@ -1139,6 +1284,38 @@
         "logo.png",
         "meilisearch.0.18.0.nupkg.sha512",
         "meilisearch.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Abstractions/2.3.11": {
+      "sha512": "sNpm9t4l5Axt5qMzfD9pYVm7dWHys12TtIbtQ2VVMfKN8eCJiqtZX8ZhC1mhttWOfCuNOMtd+Hh+HoA7VLyoqw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.abstractions/2.3.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.xml",
+        "microsoft.aspnetcore.http.abstractions.2.3.11.nupkg.sha512",
+        "microsoft.aspnetcore.http.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Features/5.0.17": {
+      "sha512": "3jG2xS+dx8DDCGV/F+STdPTg89lX3ao3dF/VEPvJaz3wzBIjuadipTtYNEXDIVuOPZwb6jdmhrX9jkzOIBm5cw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.features/5.0.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/net461/Microsoft.AspNetCore.Http.Features.xml",
+        "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Http.Features.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.xml",
+        "microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+        "microsoft.aspnetcore.http.features.nuspec"
       ]
     },
     "Microsoft.Build.Framework/18.0.2": {
@@ -2382,10 +2559,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Configuration/10.0.7": {
-      "sha512": "wZbGh7J8R1vXN525O6d8dlcDTxhRTnd5MyW4LdfP5S0tSnTwTCseYSrq6g0Mxh7W9xn8P/2xPuf0D/m6k2dy2w==",
+    "Microsoft.Extensions.Configuration/10.0.9": {
+      "sha512": "woZsWLhOQsASuxbmgiZJqiGUBNo3IjRdXC92xt8rRokza+P6/nIsnzq7sm9Or6ZYcRl2kL1ufj8HVzp1QlPTXw==",
       "type": "package",
-      "path": "microsoft.extensions.configuration/10.0.7",
+      "path": "microsoft.extensions.configuration/10.0.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2406,15 +2583,15 @@
         "lib/net9.0/Microsoft.Extensions.Configuration.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
-        "microsoft.extensions.configuration.10.0.7.nupkg.sha512",
+        "microsoft.extensions.configuration.10.0.9.nupkg.sha512",
         "microsoft.extensions.configuration.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Configuration.Abstractions/10.0.7": {
-      "sha512": "t56nEgvECcyLPojZIUFWJknQQDAbgfTf9J+QMYJE1YYvVgz69vN6B/AKL8Grvj3Lcnp8kTpNqwmwFhb3YLJmtQ==",
+    "Microsoft.Extensions.Configuration.Abstractions/10.0.9": {
+      "sha512": "qGhRPd3VxfLV9UqatVOiD9mAeUbj2KiMwGFYC5uXlzExiZQoe4X/hdmzGIU7BQjNLTqCnnbTHVyBglG3668/HA==",
       "type": "package",
-      "path": "microsoft.extensions.configuration.abstractions/10.0.7",
+      "path": "microsoft.extensions.configuration.abstractions/10.0.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2435,7 +2612,7 @@
         "lib/net9.0/Microsoft.Extensions.Configuration.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
-        "microsoft.extensions.configuration.abstractions.10.0.7.nupkg.sha512",
+        "microsoft.extensions.configuration.abstractions.10.0.9.nupkg.sha512",
         "microsoft.extensions.configuration.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -2680,10 +2857,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Primitives/10.0.8": {
-      "sha512": "OBPo4nYhMyIbtueoC10CBm6AGAbo/A9IV8QQ/6ryZS7VvmqpGT7hunazeHLxFawRzn3oLOq4jhqhpBX4tfswWQ==",
+    "Microsoft.Extensions.Primitives/10.0.9": {
+      "sha512": "fmEbAUFsaIKirgLt/lYhuFRBwhcSJN31jjHgCdbQxJiWOum6EdLjkbgGuukSP9z/a+9LibaxII/kF+GwOXgC4g==",
       "type": "package",
-      "path": "microsoft.extensions.primitives/10.0.8",
+      "path": "microsoft.extensions.primitives/10.0.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2704,7 +2881,7 @@
         "lib/net9.0/Microsoft.Extensions.Primitives.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
-        "microsoft.extensions.primitives.10.0.8.nupkg.sha512",
+        "microsoft.extensions.primitives.10.0.9.nupkg.sha512",
         "microsoft.extensions.primitives.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -3137,12 +3314,15 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "Isopoh.Cryptography.Argon2 >= 2.0.0",
       "MeiliSearch >= 0.18.0",
+      "Microsoft.AspNetCore.Http.Abstractions >= 2.3.11",
+      "Microsoft.AspNetCore.Http.Features >= 5.0.17",
       "Microsoft.EntityFrameworkCore >= 10.0.8",
       "Microsoft.EntityFrameworkCore.Abstractions >= 10.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.7",
       "Microsoft.EntityFrameworkCore.Tools >= 10.0.7",
-      "Microsoft.Extensions.Configuration >= 10.0.7",
+      "Microsoft.Extensions.Configuration >= 10.0.9",
       "Microsoft.IdentityModel.Tokens >= 8.18.0",
       "Newtonsoft.Json >= 13.0.4",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 10.0.1",
@@ -3158,11 +3338,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Gezzyn\\gezzyn\\gezzyn.Infrastructure\\gezzyn.Infrastructure.csproj",
+      "projectUniqueName": "D:\\gezzyn\\gezzyn\\gezzyn.Infrastructure\\gezzyn.Infrastructure.csproj",
       "projectName": "gezzyn.Infrastructure",
-      "projectPath": "D:\\Gezzyn\\gezzyn\\gezzyn.Infrastructure\\gezzyn.Infrastructure.csproj",
+      "projectPath": "D:\\gezzyn\\gezzyn\\gezzyn.Infrastructure\\gezzyn.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\software-4\\.nuget\\packages\\",
-      "outputPath": "D:\\Gezzyn\\gezzyn\\gezzyn.Infrastructure\\obj\\",
+      "outputPath": "D:\\gezzyn\\gezzyn\\gezzyn.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3184,11 +3364,11 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\Gezzyn\\gezzyn\\gezzyn.Application\\gezzyn.Application.csproj": {
-              "projectPath": "D:\\Gezzyn\\gezzyn\\gezzyn.Application\\gezzyn.Application.csproj"
+            "D:\\gezzyn\\gezzyn\\gezzyn.Application\\gezzyn.Application.csproj": {
+              "projectPath": "D:\\gezzyn\\gezzyn\\gezzyn.Application\\gezzyn.Application.csproj"
             },
-            "D:\\Gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj": {
-              "projectPath": "D:\\Gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj"
+            "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj": {
+              "projectPath": "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj"
             }
           }
         }
@@ -3209,9 +3389,21 @@
       "net10.0": {
         "targetAlias": "net10.0",
         "dependencies": {
+          "Isopoh.Cryptography.Argon2": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
           "MeiliSearch": {
             "target": "Package",
             "version": "[0.18.0, )"
+          },
+          "Microsoft.AspNetCore.Http.Abstractions": {
+            "target": "Package",
+            "version": "[2.3.11, )"
+          },
+          "Microsoft.AspNetCore.Http.Features": {
+            "target": "Package",
+            "version": "[5.0.17, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
@@ -3235,7 +3427,7 @@
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
-            "version": "[10.0.7, )"
+            "version": "[10.0.9, )"
           },
           "Microsoft.IdentityModel.Tokens": {
             "target": "Package",

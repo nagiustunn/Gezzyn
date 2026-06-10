@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Gezzyn\\gezzyn\\gezzyn.Application\\gezzyn.Application.csproj": {}
+    "D:\\gezzyn\\gezzyn\\gezzyn.Application\\gezzyn.Application.csproj": {}
   },
   "projects": {
-    "D:\\Gezzyn\\gezzyn\\gezzyn.Application\\gezzyn.Application.csproj": {
+    "D:\\gezzyn\\gezzyn\\gezzyn.Application\\gezzyn.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Gezzyn\\gezzyn\\gezzyn.Application\\gezzyn.Application.csproj",
+        "projectUniqueName": "D:\\gezzyn\\gezzyn\\gezzyn.Application\\gezzyn.Application.csproj",
         "projectName": "gezzyn.Application",
-        "projectPath": "D:\\Gezzyn\\gezzyn\\gezzyn.Application\\gezzyn.Application.csproj",
+        "projectPath": "D:\\gezzyn\\gezzyn\\gezzyn.Application\\gezzyn.Application.csproj",
         "packagesPath": "C:\\Users\\software-4\\.nuget\\packages\\",
-        "outputPath": "D:\\Gezzyn\\gezzyn\\gezzyn.Application\\obj\\",
+        "outputPath": "D:\\gezzyn\\gezzyn\\gezzyn.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\Gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj": {
-                "projectPath": "D:\\Gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj"
+              "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj": {
+                "projectPath": "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj"
               }
             }
           }
@@ -66,6 +66,10 @@
             "MediatR": {
               "target": "Package",
               "version": "[14.1.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[10.0.8, )"
             }
           },
           "imports": [
@@ -362,14 +366,14 @@
         }
       }
     },
-    "D:\\Gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj": {
+    "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj",
+        "projectUniqueName": "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj",
         "projectName": "gezzyn.Domain",
-        "projectPath": "D:\\Gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj",
+        "projectPath": "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\gezzyn.Domain.csproj",
         "packagesPath": "C:\\Users\\software-4\\.nuget\\packages\\",
-        "outputPath": "D:\\Gezzyn\\gezzyn\\gezzyn.Domain\\obj\\",
+        "outputPath": "D:\\gezzyn\\gezzyn\\gezzyn.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
