@@ -9,10 +9,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi;
 using System.Reflection;
-using System.Security.Claims;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.WebHost.UseUrls("http://*:8080");
 
 builder.Services
     .AddControllers()
@@ -40,29 +41,46 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.Configure<RouteOptions>(options => { options.LowercaseUrls = true; });
 builder.Services.Configure<FormOptions>(options => { options.MultipartBodyLengthLimit = 209715200; });
 
+var jwtSecret = builder.Configuration["Jwt:Secret"]!;
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
+    .AddJwtBearer(opt =>
     {
-        var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Secret"]))
-        {
-            KeyId = builder.Configuration["Jwt:Secret"]
-        };
-        options.TokenValidationParameters = new TokenValidationParameters
+        opt.TokenValidationParameters = new TokenValidationParameters
         {
             ValidateIssuerSigningKey = true,
-            IssuerSigningKey = signingKey,
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(jwtSecret)),
             ValidateIssuer = true,
-            ValidateAudience = true,
             ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidateAudience = true,
             ValidAudience = builder.Configuration["Jwt:Audience"],
-            RoleClaimType = ClaimTypes.Role
+            ValidateLifetime = true,
+            ClockSkew = TimeSpan.Zero
+        };
+
+        opt.Events = new JwtBearerEvents
+        {
+            OnMessageReceived = ctx =>
+            {
+                var token = ctx.Request.Query["access_token"];
+                var path = ctx.HttpContext.Request.Path;
+                if (!string.IsNullOrEmpty(token) && path.StartsWithSegments("/hubs"))
+                    ctx.Token = token;
+                return Task.CompletedTask;
+            }
         };
     });
 
+
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Gezzyn API", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "Gezzyn API",
+        Version = "v1",
+        Description = "Gezzyn seyahat planlama uygulaması API"
+    });
 
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
@@ -70,7 +88,8 @@ builder.Services.AddSwaggerGen(c =>
         Name = "Authorization",
         In = ParameterLocation.Header,
         Type = SecuritySchemeType.Http,
-        Scheme = "bearer"
+        Scheme = "bearer",
+        BearerFormat = "JWT",
     });
 
     c.AddSecurityRequirement(document => new OpenApiSecurityRequirement()
@@ -131,6 +150,7 @@ if (app.Environment.IsDevelopment())
 app.UseSwagger();
 app.UseCors("AllowAll");
 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Gezzyn API v1"));
+app.UseAuthentication();
 app.UseAuthorization();
 app.UseMiddleware<ExceptionMiddleware>();
 app.UseSession();
