@@ -268,3 +268,20 @@ __pycache__/
 # Cake - Uncomment if you are using it
 # tools/
 
+# Build outputs
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# User Secrets
+secrets.json
