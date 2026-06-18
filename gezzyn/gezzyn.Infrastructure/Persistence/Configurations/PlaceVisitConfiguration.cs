@@ -26,6 +26,9 @@ namespace gezzyn.Infrastructure.Persistence.Configurations
                 .WithMany()
                 .HasForeignKey(pv => pv.AddedByUserId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            builder.Navigation(x => x.AddedBy).AutoInclude();
+            builder.Navigation(x => x.Place).AutoInclude();
         }
     }
 }

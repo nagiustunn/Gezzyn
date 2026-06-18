@@ -14,6 +14,8 @@ namespace gezzyn.Infrastructure.Persistence.Configurations
             builder.Property(m => m.Role).HasConversion<string>().HasMaxLength(20);
 
             builder.HasIndex(m => new { m.TripId, m.UserId }).IsUnique();
+
+            builder.Navigation(x => x.User).AutoInclude();
         }
     }
 }

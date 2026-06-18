@@ -34,6 +34,10 @@ namespace gezzyn.Infrastructure.Persistence.Configurations
                 .WithOne(pv => pv.Trip)
                 .HasForeignKey(pv => pv.TripId)
                 .OnDelete(DeleteBehavior.Cascade);
+
+
+            builder.Navigation(t => t.PlaceVisits).AutoInclude(); 
+            builder.Navigation(t => t.Members).AutoInclude(); 
         }
     }
 }

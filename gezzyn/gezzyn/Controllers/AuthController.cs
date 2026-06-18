@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace gezzyn.API.Controllers
 {
+    [ApiController]
     [Route("api/[controller]")]
     public class AuthController : ControllerBase
     {
