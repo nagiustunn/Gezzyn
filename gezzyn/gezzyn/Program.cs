@@ -1,8 +1,10 @@
 using gezzyn.API.Filters;
 using gezzyn.API.Middlewares;
 using gezzyn.Application;
+using gezzyn.Domain.Interfaces;
 using gezzyn.Infrastructure;
 using gezzyn.Infrastructure.Persistence;
+using gezzyn.Infrastructure.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.EntityFrameworkCore;
@@ -127,6 +129,8 @@ builder.Services.AddCors(options =>
             .AllowAnyHeader();
     });
 });
+
+builder.Services.AddHttpClient<IGooglePlacesService, GooglePlacesService>();
 
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
