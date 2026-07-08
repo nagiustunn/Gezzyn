@@ -2,5 +2,7 @@
   <Project Path="gezzyn.Application/gezzyn.Application.csproj" />
   <Project Path="gezzyn.Domain/gezzyn.Domain.csproj" />
   <Project Path="gezzyn.Infrastructure/gezzyn.Infrastructure.csproj" />
+  <Project Path="gezzyn.Tests.Integration/gezzyn.Tests.Integration.csproj" />
+  <Project Path="gezzyn.Tests.Unit/gezzyn.Tests.Unit.csproj" />
   <Project Path="gezzyn/gezzyn.API.csproj" />
 </Solution>

@@ -1,5 +1,7 @@
 ﻿using FluentValidation;
+using gezzyn.Application.Extensions;
 using gezzyn.Domain.DTO;
+using gezzyn.Domain.Entities;
 using gezzyn.Domain.Interfaces;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -12,12 +14,14 @@ namespace gezzyn.Application.Features.Trips.Commands.AddPlaceToTrip
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly ITripNotificationService _notificationService;
         private readonly IValidator<AddPlaceToTripCommand> _validator;
 
-        public AddPlaceToTripCommandHandler(IUnitOfWork unitOfWork, IHttpContextAccessor httpContextAccessor, IValidator<AddPlaceToTripCommand> validator)
+        public AddPlaceToTripCommandHandler(IUnitOfWork unitOfWork, IHttpContextAccessor httpContextAccessor, ITripNotificationService tripNotificationService, IValidator<AddPlaceToTripCommand> validator)
         {
             _unitOfWork = unitOfWork;
             _httpContextAccessor = httpContextAccessor;
+            _notificationService = tripNotificationService;
             _validator = validator;
         }
 
@@ -37,13 +41,14 @@ namespace gezzyn.Application.Features.Trips.Commands.AddPlaceToTrip
                     };
                 }
 
-
                 var trip = await _unitOfWork.Repository<Domain.Entities.Trip>().GetByIdAsync(request.TripId);
 
                 var order = trip.PlaceVisits.Count(pv => !pv.IsDeleted) + 1;
 
                 var userIdString = _httpContextAccessor.HttpContext?.User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
                 var userId = Guid.Parse(userIdString);
+
+                var place = await _unitOfWork.Repository<Domain.Entities.Place>().GetByIdAsync(request.PlaceId);
 
                 var placeVisit = new Domain.Entities.PlaceVisit
                 {
@@ -55,6 +60,14 @@ namespace gezzyn.Application.Features.Trips.Commands.AddPlaceToTrip
 
                 await _unitOfWork.Repository<Domain.Entities.PlaceVisit>().AddAsync(placeVisit);
                 var result = await _unitOfWork.SaveChangesAsync() > 0;
+
+                if(result)
+                {
+                    placeVisit.Place = place;
+                    var dto = placeVisit.ToDto();
+
+                    await _notificationService.NotifyPlaceAdded(request.TripId, dto);
+                }
 
                 return new Response<bool>
                 {

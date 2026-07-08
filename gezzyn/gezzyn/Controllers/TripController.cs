@@ -2,6 +2,7 @@
 using gezzyn.Application.DTO.Trip;
 using gezzyn.Application.Features.Trips.Commands.AddPlaceToTrip;
 using gezzyn.Application.Features.Trips.Commands.CreateTrip;
+using gezzyn.Application.Features.Trips.Commands.OptimizeRoute;
 using gezzyn.Application.Features.Trips.Commands.ReOrderPlaces;
 using gezzyn.Application.Features.Trips.Queries.GetMyTrips;
 using gezzyn.Application.Features.Trips.Queries.GetTripById;
@@ -56,6 +57,13 @@ namespace gezzyn.API.Controllers
         public async Task<IActionResult> Reorder(Guid id, [FromBody] List<Guid> orderPlacesIds)
         {
             var result = await _mediator.Send(new ReOrderPlacesCommand(id, orderPlacesIds));
+            return result.ToActionResult();
+        }
+
+        [HttpPost("{id:guid}/optimize")]
+        public async Task<IActionResult> OptimizeRoute(  Guid id, [FromQuery] string travelMode = "Drive")
+        {
+            var result = await _mediator.Send(new OptimizeRouteCommand(id, travelMode));
             return result.ToActionResult();
         }
     }

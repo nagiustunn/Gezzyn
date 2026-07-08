@@ -1,5 +1,7 @@
 using gezzyn.API.Filters;
+using gezzyn.API.Hubs;
 using gezzyn.API.Middlewares;
+using gezzyn.API.Services;
 using gezzyn.Application;
 using gezzyn.Domain.Interfaces;
 using gezzyn.Infrastructure;
@@ -130,7 +132,11 @@ builder.Services.AddCors(options =>
     });
 });
 
+builder.Services.AddSignalR();
+
 builder.Services.AddHttpClient<IGooglePlacesService, GooglePlacesService>();
+builder.Services.AddHttpClient<IRouteOptimizationService, GoogleRouteOptimizationService>();
+builder.Services.AddScoped<ITripNotificationService, TripNotificationService>();
 
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
@@ -159,5 +165,7 @@ app.UseAuthorization();
 app.UseMiddleware<ExceptionMiddleware>();
 app.UseSession();
 app.MapControllers();
+
+app.MapHub<TripHub>("/hubs/trip");
 
 await app.RunAsync();

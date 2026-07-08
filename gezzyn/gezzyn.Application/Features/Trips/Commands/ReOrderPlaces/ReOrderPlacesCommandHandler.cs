@@ -1,4 +1,6 @@
-﻿using gezzyn.Domain.DTO;
+﻿using FluentValidation;
+using gezzyn.Application.DTO.Route;
+using gezzyn.Domain.DTO;
 using gezzyn.Domain.Entities;
 using gezzyn.Domain.Enums;
 using gezzyn.Domain.Interfaces;
@@ -13,61 +15,41 @@ namespace gezzyn.Application.Features.Trips.Commands.ReOrderPlaces
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly ITripNotificationService _notificationService;
+        private readonly IValidator<ReOrderPlacesCommand> _validator;
 
-        public ReOrderPlacesCommandHandler(IUnitOfWork unitOfWork, IHttpContextAccessor httpContextAccessor)
+        public ReOrderPlacesCommandHandler(IUnitOfWork unitOfWork, IHttpContextAccessor httpContextAccessor, ITripNotificationService notificationService, 
+                                           IValidator<ReOrderPlacesCommand> validator)
         {
             _unitOfWork = unitOfWork;
             _httpContextAccessor = httpContextAccessor;
+            _notificationService = notificationService;
+            _validator = validator;
         }
 
         public async Task<Response<bool>> Handle(ReOrderPlacesCommand request, CancellationToken cancellationToken)
         {
             try
             {
+                var validationResult = await _validator.ValidateAsync(request, cancellationToken);
+                if (!validationResult.IsValid)
+                {
+                    return new Response<bool>
+                    {
+                        Data = false,
+                        Status = "Validation Error",
+                        StatusCode = HttpStatusCode.BadRequest,
+                        Message = string.Join("; ", validationResult.Errors.Select(e => e.ErrorMessage))
+                    };
+                }
+
                 var trip = await _unitOfWork.Repository<Domain.Entities.Trip>()
                                  .FirstOrDefaultAsync(x => x.Id == request.TripId);
-
-                if (trip == null)
-                    return new Response<bool>
-                    {
-                        Data = false,
-                        Message = "Gezi bulunamadı.",
-                        Status = "Not Found",
-                        StatusCode = HttpStatusCode.NotFound
-                    };
-
-                if ((trip.Members == null || (trip.Members != null && !trip.Members.Any())) &&
-                   (trip.PlaceVisits == null || (trip.PlaceVisits != null && !trip.PlaceVisits.Any())))
-                    return new Response<bool>
-                    {
-                        Data = false,
-                        Message = "Gezinin detayları bulunamadı. Lütfen tekrar deneyiniz.",
-                        Status = "Not Found",
-                        StatusCode = HttpStatusCode.NotFound
-                    };
 
                 var userIdString = _httpContextAccessor.HttpContext?.User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
                 var userId = Guid.Parse(userIdString);
 
                 var member = trip.Members.FirstOrDefault(x => x.Id == userId && !x.IsDeleted);
-
-                if (member == null)
-                    return new Response<bool>
-                    {
-                        Data = false,
-                        Message = "Bu geziye erişim yetkiniz yoktur.",
-                        Status = "Unauthorized",
-                        StatusCode = HttpStatusCode.Unauthorized
-                    };
-
-                if (member.Role == TripMemberRole.Member)
-                    return new Response<bool>
-                    {
-                        Data = false,
-                        Message = "Rota düzenleme yetkiniz yoktur.",
-                        Status = "Unauthorized",
-                        StatusCode = HttpStatusCode.Unauthorized
-                    };
 
                 var count = 0;
 
@@ -85,6 +67,9 @@ namespace gezzyn.Application.Features.Trips.Commands.ReOrderPlaces
                 }
 
                 var result = await _unitOfWork.SaveChangesAsync() > 0;
+
+                if(result)
+                    await _notificationService.NotifyPlacesReordered(request.TripId, request.OrderPlacesIds);
 
                 return new Response<bool>
                 {
